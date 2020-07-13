@@ -1,6 +1,28 @@
 学习笔记
 =======
 
+## 递归模板
+
+```java
+public void recursion(level) {
+
+     // end condition
+    if (level == xxx) {
+        return;
+    }
+
+
+    // 处理逻辑 processor(level, ...)
+    process(level, ...)
+
+
+    // 递归调用 recursion
+    recursion(level + 1, ...)
+
+    // restore 类似回溯撤销模板
+}
+```
+
 ## 回溯模板
 
 ```java
